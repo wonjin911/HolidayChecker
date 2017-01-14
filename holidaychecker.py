@@ -1,6 +1,9 @@
 from datetime import date as dt
 from datetime import timedelta as td
 
+HOLIDAY = 2
+MIN_TRAVEL_DAY = 5
+
 HOLIDAY_LIST = \
     [ \
         dt(2017, 1, 1) \
@@ -38,9 +41,6 @@ startDate = today + td(days=-30)
 endDate = startDate + td(days=365)
 
 print "Check from %s to %s" % (startDate, endDate)
-
-HOLIDAY = 1
-MIN_TRAVEL_DAY = 4
 
 straightBreak = 0
 holidayLeft = HOLIDAY
